@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>What's the weather like?</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
-<body>
-    <section class="hero is-primary">
+<body class="main">
+    <section class="hero is-light">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -28,7 +30,7 @@
                                 {{ form.name }}
                             </div>
                             <div class="control">
-                                <button class="button is-info">
+                                <button class="button is-dark">
                                     Add City
                                 </button>
                             </div>
